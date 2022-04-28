@@ -1,7 +1,7 @@
-package com.salestaxes.shopping;
+package it.salestaxes.shopping;
 
-import com.salestaxes.helper.ProductCalculatorHelper;
-import com.salestaxes.shopping.product.Product;
+import it.salestaxes.helper.ProductCalculatorHelper;
+import it.salestaxes.shopping.product.Product;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

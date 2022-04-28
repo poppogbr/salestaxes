@@ -1,4 +1,4 @@
-package com.salestaxes.shopping.product;
+package it.salestaxes.shopping.product;
 
 import java.math.BigDecimal;
 

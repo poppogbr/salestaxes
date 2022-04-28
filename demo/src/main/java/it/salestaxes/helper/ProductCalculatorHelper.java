@@ -1,6 +1,6 @@
-package com.salestaxes.helper;
+package it.salestaxes.helper;
 
-import com.salestaxes.shopping.product.Product;
+import it.salestaxes.shopping.product.Product;
 
 import java.math.BigDecimal;
 

@@ -1,15 +1,14 @@
-package com.salestaxes;
+package it.salestaxes;
 
-import com.salestaxes.helper.CreateProductHelper;
-import com.salestaxes.readfile.FileScanner;
-import com.salestaxes.shopping.Cart;
-import com.salestaxes.shopping.product.Product;
+import it.salestaxes.helper.CreateProductHelper;
+import it.salestaxes.shopping.Cart;
+import it.salestaxes.shopping.product.Product;
 
 import java.util.List;
 
 public class SalesTaxesApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		FileScanner fileScanner = new FileScanner("input1.txt");
 		List<Product> products = CreateProductHelper.createProductListFromLines(fileScanner);
 		Cart cart = new Cart(products);

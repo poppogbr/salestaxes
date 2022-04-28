@@ -8,7 +8,17 @@
 	<name>Sales Taxes</name>
 	<description>Sales Taxes project</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
+		<testSourceDirectory>${project.basedir}/src/test</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -29,7 +39,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.salestaxes.SalesTaxesApplication</mainClass>
+							<mainClass>it.salestaxes.SalesTaxesApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

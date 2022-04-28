@@ -1,8 +1,8 @@
-package com.salestaxes.helper;
+package it.salestaxes.helper;
 
-import com.salestaxes.shopping.product.Product;
-import com.salestaxes.shopping.product.factory.ProductFactory;
-import com.salestaxes.readfile.FileScanner;
+import it.salestaxes.shopping.product.Product;
+import it.salestaxes.shopping.product.factory.ProductFactory;
+import it.salestaxes.FileScanner;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -15,7 +15,7 @@ public class CreateProductHelper {
     private static final String LINE_FORMAT = "(?<quantity>\\d*) (?<description>[\\w\\s]*) at (?<price>\\d*\\.\\d*)";
     private static final String IMPORTED = "imported";
 
-    public static List<Product> createProductListFromLines(FileScanner scanner) {
+    public static List<Product> createProductListFromLines(FileScanner scanner) throws Exception {
         return scanner.lines().stream()
                 .map(line -> {
                     Pattern pattern = Pattern.compile(LINE_FORMAT);

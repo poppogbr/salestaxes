@@ -1,4 +1,4 @@
-package com.salestaxes.helper;
+package it.salestaxes.helper;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

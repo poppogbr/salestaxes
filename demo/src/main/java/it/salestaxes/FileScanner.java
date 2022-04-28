@@ -1,4 +1,4 @@
-package com.salestaxes.readfile;
+package it.salestaxes;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,7 +15,7 @@ public class FileScanner {
         this.filename = filename;
     }
 
-    public List<String> lines() {
+    public List<String> lines() throws Exception {
         List<String> lines = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(
                 getClass().getClassLoader().getResourceAsStream(this.filename)))) {
@@ -24,6 +24,7 @@ public class FileScanner {
                 lines.add(line);
             }
         } catch (Exception e) {
+            throw new Exception(e);
         }
 
         return lines;

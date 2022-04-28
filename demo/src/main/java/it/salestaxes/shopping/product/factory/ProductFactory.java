@@ -1,8 +1,8 @@
-package com.salestaxes.shopping.product.factory;
+package it.salestaxes.shopping.product.factory;
 
-import com.salestaxes.shopping.product.Product;
-import com.salestaxes.shopping.product.TaxFreeProduct;
-import com.salestaxes.shopping.product.Taxed10Product;
+import it.salestaxes.shopping.product.Product;
+import it.salestaxes.shopping.product.TaxFreeProduct;
+import it.salestaxes.shopping.product.Taxed10Product;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
